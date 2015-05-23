@@ -16,9 +16,9 @@ fi
 # Install redis-desktop-manager like we're downloading it from their website
 # Unfortunately this locks the version number
 
-if ! doesCommandExist redis-desktop-manager; then
+if ! isPackageInstalled redis-desktop-manager; then
 	mkdir -p temp
 	cd temp
-	curl https://github.com/uglide/RedisDesktopManager/releases/download/0.7.6/redis-desktop-manager_0.7.6.8_amd64_ubuntu.deb -o redis-desktop-manager.deb
+	wget -O redis-desktop-manager.deb https://github.com/uglide/RedisDesktopManager/releases/download/0.7.6/redis-desktop-manager_0.7.6.8_amd64_ubuntu.deb
 	sudo gdebi --n redis-desktop-manager.deb
 fi

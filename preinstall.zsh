@@ -48,3 +48,12 @@ ensurePackageInstalled xchat-gnome-indicator
 
 # Python/PIP
 ensurePackageInstalled python-pip
+
+# Dropbox
+
+if ! isPackageInstalled dropbox; then
+mkdir -p temp
+cd temp
+wget -O dropbox.deb https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.02.12_amd64.deb
+sudo gdebi --n dropbox.deb
+fi

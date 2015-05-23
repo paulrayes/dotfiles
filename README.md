@@ -42,7 +42,7 @@ You can re-run `install` as many times as you like.
 
 - gdebi to install `.deb` files, better than dpkg and faster than the Ubuntu Software Center
 - curl and other necessary things
-- Google Chrome, GIMP, Inkscape, xchat, FileZilla, gitg
+- Google Chrome, GIMP, Inkscape, xchat, FileZilla, gitg, Dropbox
 - Package managers: npm, gems, bundler, pip
 - Languages: Ruby, Node.js
 - Databases: MongoDB, MariaDB, Redis (in `/opt/redis`)
@@ -84,6 +84,10 @@ I do not know how to install some of these automatically. Just installing some w
 - Siteleaf Liquid Syntax
 - EditorConfig
 - VCS Gutter
+
+# Useful links
+
+- [Dotfiles are meant to be forked](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/) - article
 
 # License
 

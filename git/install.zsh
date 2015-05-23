@@ -1,4 +1,5 @@
 #!/bin/zsh
+. `pwd`/include.zsh
 
 # git configuration
 git config --global user.name "$NAME"
