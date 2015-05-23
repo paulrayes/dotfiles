@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# https://github.com/bevacqua/dotfiles/blob/master/ubuntu/zsh.sh
+
+# Getting oh-my-zsh to work in Ubuntu
+# https://gist.github.com/tsabat/1498393
+
+# zsh
+sudo apt-get update
+sudo apt-get install -y zsh
+wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | bash
+chsh -s `which zsh`
+
+# reboot!
+sudo shutdown -r 0

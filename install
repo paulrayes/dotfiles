@@ -1,0 +1,15 @@
+#!/bin/zsh
+
+zsh vars.zsh
+
+echo Running preinstall script
+zsh preinstall.zsh
+
+source ~/.zshrc
+
+# Looping through all the directories
+for script in `pwd`/*/install.zsh
+do
+	echo Running $script
+	zsh $script
+done
